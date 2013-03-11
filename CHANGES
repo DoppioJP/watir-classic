@@ -1,3 +1,7 @@
+== 3.5.1 - 2013/03/11
+
+* Added scrolling browser content methods based on JavaScript
+
 == 3.5.0 - 2013/03/10
 
 * Browser#name returns :internet_explorer instead of :ie.
