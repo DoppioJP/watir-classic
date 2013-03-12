@@ -540,7 +540,7 @@ module Watir
     #
     
     def y
-      self.execute_script("javascript:return window.pageYOffset")
+      self.execute_script("javascript:return window.pageYOffset") || self.execute_script("javascript:return document.body.scrollTop") || self.execute_script("javascript:return document.documentElement.scrollTop")
     end
 
     #
