@@ -532,7 +532,7 @@ module Watir
     #
 
     def x
-      self.execute_script("javascript:return window.pageXOffset")
+      self.execute_script("javascript:return window.pageXOffset") || self.execute_script("javascript:return document.body.scrollLeft") || self.execute_script("javascript:return document.documentElement.scrollLeft") 
     end
     
     # 
